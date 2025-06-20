@@ -1,0 +1,29 @@
+.bg-light-blue {
+  background-color: #e3f2fd;
+}
+
+.login-form-container {
+  max-width: 420px;
+  width: 100%;
+}
+
+.card {
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #42a5f5;
+  border-color: #42a5f5;
+}
+
+.btn-primary:hover {
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+}
+
+.form-control:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.6);
+}

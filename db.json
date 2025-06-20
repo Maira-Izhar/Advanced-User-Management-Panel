@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "phone": "03121234567",
+      "role": "admin",
+      "gender": "male",
+      "dob": "1990-01-01",
+      "address": "123 Admin Street, City",
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "name": "Viewer User",
+      "email": "viewer@example.com",
+      "password": "viewer123",
+      "phone": "03211234567",
+      "role": "viewer",
+      "gender": "female",
+      "dob": "1995-06-15",
+      "address": "456 Viewer Road, Town",
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "name": "Deleted User",
+      "email": "deleted@example.com",
+      "password": "deleted123",
+      "phone": "03331234567",
+      "role": "viewer",
+      "gender": "other",
+      "dob": "2000-09-30",
+      "address": "789 Deleted Lane, Village",
+      "isDeleted": true
+    },
+    {
+      "id": "4",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "john123",
+      "phone": "03451234567",
+      "role": "admin",
+      "gender": "male",
+      "dob": "1992-04-12",
+      "address": "101 Main Street, Metro",
+      "isDeleted": false
+    },
+    {
+      "id": "5",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "jane123",
+      "phone": "03561234567",
+      "role": "admin",
+      "gender": "female",
+      "dob": "1988-11-25",
+      "address": "202 Broadway, City",
+      "isDeleted": false
+    },
+    {
+      "id": "6",
+      "name": "Ali Khan",
+      "email": "ali@example.com",
+      "password": "ali123",
+      "phone": "03671234567",
+      "role": "viewer",
+      "gender": "male",
+      "dob": "1997-08-19",
+      "address": "303 Canal Road, Lahore",
+      "isDeleted": false
+    },
+    {
+      "id": "7",
+      "name": "Sara Ahmed",
+      "email": "sara@example.com",
+      "password": "sara123",
+      "phone": "03781234567",
+      "role": "admin",
+      "gender": "female",
+      "dob": "1993-03-10",
+      "address": "404 Garden Town, Karachi",
+      "isDeleted": false
+    },
+    {
+      "id": "8",
+      "name": "Zain Raza",
+      "email": "zain@example.com",
+      "password": "zain123",
+      "phone": "03891234567",
+      "role": "viewer",
+      "gender": "male",
+      "dob": "1996-07-22",
+      "address": "505 Gulberg, Islamabad",
+      "isDeleted": false
+    },
+    {
+      "id": "9",
+      "name": "Hina Malik",
+      "email": "hina@example.com",
+      "password": "hina123",
+      "phone": "03901234567",
+      "role": "admin",
+      "gender": "female",
+      "dob": "1991-05-05",
+      "address": "606 Defence, Rawalpindi",
+      "isDeleted": false
+    },
+    {
+      "id": "10",
+      "name": "Tariq Bashir",
+      "email": "tariq@example.com",
+      "password": "tariq123",
+      "phone": "03011234567",
+      "role": "viewer",
+      "gender": "male",
+      "dob": "1985-02-28",
+      "address": "707 Saddar, Faisalabad",
+      "isDeleted": true
+    },
+    {
+      "id": "11",
+      "name": "Abubakr",
+      "email": "abubakr@gmail.com",
+      "password": "1234567",
+      "phone": "0313424243",
+      "role": "viewer",
+      "gender": "male",
+      "dob": "2004-07-08",
+      "address": "178 b",
+      "isDeleted": false
+    }]
+}

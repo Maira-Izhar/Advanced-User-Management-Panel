@@ -1,0 +1,74 @@
+<div class="form-container">
+  <h2>Create User</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+
+    <div *ngIf="step === 1">
+      <label>Name</label>
+      <input type="text" formControlName="name" />
+      <div class="error" *ngIf="(form.get('name')?.touched || submitted) && form.get('name')?.invalid">
+        <small *ngIf="form.get('name')?.errors?.['required']">Name is required.</small>
+        <small *ngIf="form.get('name')?.errors?.['minlength']">Name must be at least 3 characters.</small>
+      </div>
+
+      <label>Phone</label>
+      <input type="text" formControlName="phone" />
+      <div class="error" *ngIf="(form.get('phone')?.touched || submitted) && form.get('phone')?.invalid">
+        <small *ngIf="form.get('phone')?.errors?.['required']">Phone is required.</small>
+      </div>
+
+      <label>Gender</label>
+      <select formControlName="gender">
+        <option value="" disabled>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="error" *ngIf="(form.get('gender')?.touched || submitted) && form.get('gender')?.invalid">
+        <small *ngIf="form.get('gender')?.errors?.['required']">Gender is required.</small>
+      </div>
+
+      <label>Date of Birth</label>
+      <input type="date" formControlName="dob" />
+      <div class="error" *ngIf="(form.get('dob')?.touched || submitted) && form.get('dob')?.invalid">
+        <small>DOB is required.</small>
+      </div>
+
+      <label>Address</label>
+      <textarea rows="2" formControlName="address"></textarea>
+      <div class="error" *ngIf="(form.get('address')?.touched || submitted) && form.get('address')?.invalid">
+        <small>Address is required.</small>
+      </div>
+
+      <button type="button" (click)="nextStep()">Next</button>
+    </div>
+
+    <div *ngIf="step === 2">
+      <label>Email</label>
+      <input type="email" formControlName="email" />
+      <div class="error" *ngIf="(form.get('email')?.touched || submitted) && form.get('email')?.invalid">
+        <small *ngIf="form.get('email')?.errors?.['required']">Email is required.</small>
+        <small *ngIf="form.get('email')?.errors?.['email']">Invalid email format.</small>
+      </div>
+
+      <label>Password</label>
+      <input type="password" formControlName="password" />
+      <div class="error" *ngIf="(form.get('password')?.touched || submitted) && form.get('password')?.invalid">
+        <small *ngIf="form.get('password')?.errors?.['required']">Password is required.</small>
+        <small *ngIf="form.get('password')?.errors?.['minlength']">Min 6 characters required.</small>
+      </div>
+
+      <label>Role</label>
+      <input type="text" formControlName="role" />
+      <div class="error" *ngIf="(form.get('role')?.touched || submitted) && form.get('role')?.invalid">
+        <small *ngIf="form.get('role')?.errors?.['required']">Role is required.</small>
+      </div>
+
+      <div class="button-group">
+        <button type="button" (click)="prevStep()">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

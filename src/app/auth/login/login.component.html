@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light-blue">
+  <div class="container login-form-container">
+    <div class="card p-4 shadow-sm">
+      <h2 class="text-center text-primary mb-4">Login</h2>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email</label>
+          <input type="email" id="email" formControlName="email" class="form-control"
+            [ngClass]="{'is-invalid': loginForm.get('email')?.invalid && loginForm.get('email')?.touched}" />
+          <div class="invalid-feedback">Valid email required.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label fw-semibold">Password</label>
+          <input type="password" id="password" formControlName="password" class="form-control"
+            [ngClass]="{'is-invalid': loginForm.get('password')?.invalid && loginForm.get('password')?.touched}" />
+          <div class="invalid-feedback">Password is required.</div>
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger py-1">
+          {{ errorMessage }}
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <button class="btn btn-primary btn-lg px-5" type="submit" [disabled]="loginForm.invalid">Login</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
