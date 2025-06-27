@@ -46,7 +46,8 @@ export class TrashViewComponent {
     this.userService.restoreUser(updatedUser).subscribe({
       next: () => {
         alert('User restored');
-        this.loadDeletedUsers();
+        this.users = this.users.filter(u => u.id !== user.id);
+        this.dataSource.data = this.users;
       },
       error: () => alert('Failed to restore user')
     });

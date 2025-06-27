@@ -10,7 +10,8 @@
       "gender": "male",
       "dob": "1990-01-01",
       "address": "123 Admin Street, City",
-      "isDeleted": true
+      "isDeleted": false,
+      "isDeleFFted": false
     },
     {
       "id": "2",
@@ -22,7 +23,7 @@
       "gender": "female",
       "dob": "1995-06-15",
       "address": "456 Viewer Road, Town",
-      "isDeleted": false
+      "isDeleted": true
     },
     {
       "id": "3",
@@ -70,7 +71,8 @@
       "gender": "male",
       "dob": "1997-08-19",
       "address": "303 Canal Road, Lahore",
-      "isDeleted": false
+      "isDeleted": false,
+      "isDeleFFted": false
     },
     {
       "id": "7",
@@ -131,5 +133,18 @@
       "dob": "2004-07-08",
       "address": "178 b",
       "isDeleted": false
-    }]
+    },
+    {
+      "id": "12",
+      "name": "Ahmad Razaaa",
+      "email": "arj@gmail.com",
+      "password": "1234567",
+      "phone": "03006913738",
+      "role": "admin",
+      "gender": "male",
+      "dob": "2004-01-09",
+      "address": "21 C PIA Society",
+      "isDeleted": false
+    }
+  ]
 }

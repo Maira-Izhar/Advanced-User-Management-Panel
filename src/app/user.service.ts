@@ -69,7 +69,7 @@ export class UserService {
   }
 
   restoreUser(user: any): Observable<any> {
-    const updated = { ...user, isDeleted: false };
+    const updated = { ...user, isDeleFFted: false };
     return this.http.put(`${this.apiURL}/${user.id}`, updated).pipe(
       catchError((error) => {
         console.log("Restore failed", error);
