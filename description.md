@@ -9,7 +9,7 @@ This project is a **feature-rich CRUD application** built using Angular to demon
 
 ### User List with Table
 - Displays all users in a **paginated, searchable, and filterable table**.
-- Utilizes an external Angular table library (e.g., `ngx-datatable`, `primeng`, or `ag-grid`) for performance and advanced UI controls.
+- Utilizes an external Angular table library for performance and advanced UI controls.
 - Users can search by name/email and filter by role or status (Active/Deleted).
 
 ### Add New Users
